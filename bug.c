@@ -1,0 +1,1 @@
+int main() {    int x = 10;    int *ptr = &x;    *ptr = 20;    int y = *ptr;    printf("%d", y); // Prints 20    free(ptr); // ERROR: Attempting to free a pointer that was not allocated using malloc or calloc. This leads to undefined behavior, potentially causing a crash or corruption. }
